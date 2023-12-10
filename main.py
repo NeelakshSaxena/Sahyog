@@ -96,10 +96,10 @@ def connect_to_database():
   global mydb  # Use the global mydb variable
 
   for tries in range(3):
-    username = "freedb_admin_user-neelaksh"
-    password = "ZF#DrDKQwvas4U!"
-    databasename = "freedb_informatics_school-project"
-    hostname = "sql.freedb.tech"
+    username = input("Enter username : ")
+    password = input("Enter password : ")
+    databasename = input("Enter database name : ")
+    hostname = input("Enter hostname : ")
 
     cursor = None
 
