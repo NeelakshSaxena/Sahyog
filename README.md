@@ -192,8 +192,7 @@ The provided code is a well-structured and organized Python script for managing 
 3. Download the Python script and save it in a desired location.
 4. Run the script using `python <script_name>.py`.
 
-`PLEASE NOTE THAT YOU HAVE TO GET A DATABASE HOSTING SERVICE FOR THE CODE TO FUNCTION`
-`YOU WILL NEED TO MANUALLY GO TO main.py AND CHANGE THE LOGIN CREDENTIALS TO YOURS UNDER connect_to_database() FUNCTION`
+**PLEASE NOTE THAT YOU HAVE TO GET A DATABASE HOSTING SERVICE FOR THE CODE TO FUNCTION YOU WILL NEED TO MANUALLY GO TO `main.py` AND CHANGE THE LOGIN CREDENTIALS TO YOURS UNDER `connect_to_database()` FUNCTION**
 **Recommendations:**
 
 * Complete the implementation of incomplete functions like `update` and `custom`.
