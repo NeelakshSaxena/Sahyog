@@ -1,0 +1,51 @@
+SeatNo,FirstName,LastName,Nationality,Boarding_time,Occupation,inLuggage,inFlight_Food,Pet
+1A,John,Doe,American,10:05 AM,Software Engineer,Yes,No,No
+2B,Maria,Lopez,Spanish,12:15 PM,Doctor,No,Yes,No
+3C,Michael,Chen,Chinese,8:30 AM,Musician,Yes,Yes,No
+4D,Anna,Nguyen,Vietnamese,11:45 AM,Graphic Designer,No,No,Yes
+5E,Omar,Ahmed,Egyptian,9:00 AM,Pilot,Yes,No,No
+6F,Olivia,Jones,British,1:00 PM,Teacher,No,Yes,No
+7G,David,Kim,Korean,12:30 PM,Chef,Yes,No,No
+8H,Isabella,Garcia,Mexican,7:45 AM,Architect,No,Yes,No
+9I,Noah,Williams,Australian,10:30 AM,Photographer,Yes,No,Yes
+10J,Sofia,Martinez,Italian,5:30 PM,Lawyer,No,No,No
+11K,Lucas,Schmidt,German,11:00 AM,Web Developer,No,Yes,No
+12L,Emma,Suzuki,Japanese,9:30 AM,Nurse,Yes,No,No
+13M,Alejandro,Rodriguez,Puerto Rican,1:30 PM,Dentist,No,Yes,No
+14N,Chloe,Taylor,Canadian,7:15 AM,Journalist,Yes,No,No
+15O,Liam,Lee,Korean,10:45 AM,Actor,No,Yes,No
+16P,Ava,Singh,Indian,8:00 AM,Veterinarian,Yes,No,No
+17Q,Elijah,Brown,American,12:00 PM,Police Officer,No,No,No
+18R,Sophia,Garcia,Spanish,11:30 AM,Marketing Manager,Yes,Yes,No
+19S,Henry,Miller,British,6:00 PM,Professor,No,No,No
+20T,Charlotte,Lewis,Australian,9:15 AM,Flight Attendant,Yes,Yes,No
+21U,Gabriel,Nguyen,Vietnamese,3:30 PM,Software Engineer,No,Yes,No
+22V,Aisha,Khan,Indian,1:00 PM,Doctor,Yes,No,No
+23W,Benjamin,Garcia,Spanish,5:15 PM,Musician,Yes,Yes,No
+24X,Evelyn,Kim,Korean,8:00 AM,Graphic Designer,No,No,Yes
+25Y,Omar,Hassan,Egyptian,10:45 AM,Pilot,Yes,No,No
+26Z,Lily,Johnson,British,7:00 AM,Teacher,No,Yes,No
+27AA,Daniel,Lee,Korean,12:45 PM,Chef,Yes,No,No
+28BB,Isabella,Torres,Mexican,9:15 AM,Architect,No,Yes,No
+29CC,Amelia,Williams,Australian,3:00 PM,Photographer,Yes,No,Yes
+30DD,Enzo,Martinez,Italian,8:30 AM,Lawyer,No,No,No
+31EE,Lucas,Liu,Chinese,11:15 AM,Web Developer,Yes,Yes,No
+32FF,Sarah,Ito,Japanese,9:45 AM,Nurse,No,No,No
+33GG,Alejandro,Hernandez,Puerto Rican,6:00 PM,Dentist,Yes,Yes,No
+34HH,Chloe,Thompson,Canadian,10:15 AM,Journalist,No,No,No
+35II,Liam,Nguyen,Vietnamese,1:45 PM,Actor,Yes,Yes,No
+36JJ,Ava,Singh,Indian,12:00 PM,Veterinarian,No,No,No
+37KK,Elijah,Wilson,American,8:15 AM,Police Officer,Yes,No,No
+38LL,Sophie,Perez,Spanish,11:00 AM,Marketing Manager,No,Yes,No
+39MM,Henry,White,British,10:30 AM,Professor,Yes,No,No
+40NN,Charlotte,Clark,Australian,7:45 AM,Flight Attendant,No,Yes,No
+41OO,Gabriel,Lopez,Mexican,2:00 PM,Software Engineer,Yes,No,No
+42PP,Aisha,Khan,Pakistani,12:30 PM,Doctor,No,Yes,No
+43QQ,Benjamin,Chen,Chinese,4:30 PM,Musician,Yes,Yes,No
+44RR,Evelyn,Kim,South Korean,10:00 AM,Graphic Designer,No,No,Yes
+45SS,Omar,Al-Saif,Saudi Arabian,1:30 PM,Pilot,Yes,No,No
+46TT,Lily,Davidson,British,9:00 AM,Teacher,No,Yes,No
+47UU,Daniel,Park,Korean,6:30 PM,Chef,Yes,No,No
+48VV,Isabella,Rodriguez,Mexican,11:45 AM,Architect,No,Yes,No
+49WW,Amelia,Walker,Australian,2:15 PM,Photographer,Yes,No,Yes
+50XX,Enzo,Fernandez,Italian,5:00 PM,Lawyer,No,No,No
