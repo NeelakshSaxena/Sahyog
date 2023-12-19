@@ -60,6 +60,11 @@ def menu_screen():
     print("| select*;           > To select all data from a table                                    #working                      |")
     print("|_______________________________________________________________________________________________________________________|")
     print("|                                                                                                                       |")
+    print("| ADVANCED COMMANDS                                                                                                     |")
+    print("|                                                                                                                       |")
+    print("| commit;            > To commit changes to the database, only use in custom mode        #working                       |")
+    print("| reconnect;         > To reconnect to the database.                                     #working                       |")
+    print("|                                                                                                                       |")
     print("|                                                                                                                       |")
     print("| COMMAND TO EXIT :                                                                                                     |")
     print("|                                                                                                                       |")
@@ -515,26 +520,25 @@ def custom():
 #----------------------------------------------------------------------------
 
 def csv():
-    print()
-    csvpath = "C:\\Users\\neela\\OneDrive\\Desktop\\flight_data.csv"
     cursor = mydb.cursor()
-    
-    try:
-        print("Access denied!, you're using POPOAIRWAYS-IWQQ21 database")
-        #cursor.execute("CREATE TABLE POPOAIRWAYS_DATA(SeatNo varchar(6) PRIMARY KEY NOT NULL,FirstName varchar(50),LastName varchar(50),Nationality char(15),Boarding_time varchar(20),Occupation char(20),inLuggage char(5),inFlight_Food char(5),Pet char(5))")
-        with open(csvpath, "r") as csvfile:
-            reader = csv.reader(csvfile)
-             # Skip the header row (optional, adjust as needed)
-            next(reader)
-            for row in reader:
-                sql = f"INSERT INTO POPOAIRWAYS_FLIGHTDATA (SeatNo, FirstName, LastName, Nationality, Boarding_time, Occupation, inLuggage, inFlight_Food, Pet) VALUES ('{row[0]}', '{row[1]}', '{row[2]}', '{row[3]}', '{row[4]}', '{row[5]}', '{row[6]}', '{row[7]}', '{row[8]}');"
-                cursor.execute(sql)
-            print("Flight data successfully imported from CSV!")
-        mydb.commit()
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        print()
-    
+#open the csv file
+    with open('users.csv', mode='r') as csv_file:
+    #read csv using reader class
+        csv_reader = csv.reader(csv_file)
+    #skip header
+        header = next(csv_reader)
+    #Read csv row wise and insert into table
+        for row in csv_reader:
+            sql = "INSERT INTO users (name, mobile, email) VALUES (%s,%s,%s)"
+            cursor.execute(sql, tuple(row))
+        print("Record inserted")
+    mydb.commit()
+
+def commit():
+    mydb.commit()
+    print()
+    print("Commit successful")
+    print()
 
 if __name__ == "__main__":
     connect_to_database()
@@ -568,7 +572,7 @@ try:
         elif user_input in ['drop table','drop tables']:                                                   #deletes table                   #function_working
             drop_table()
 
-        elif user_input in ['delete a table','delete from tables']:                                     #drops table                     #function_working
+        elif user_input in ['delete a table','delete from tables']:                                        #drops table                     #function_working
             delete_from_table()
         
         elif user_input in ['insert','insert in table']:                                                   #inserts data into table         #function_working
@@ -601,7 +605,8 @@ try:
         elif user_input in ['csv']:
             csv()
         # Add elif statements for other commands and function
-            
+        elif user_input in ['commit']:
+            commit()
         #Error handlers
         elif user_input in ['Reconnect', 'reconnect']:
             reconnect_to_database()
