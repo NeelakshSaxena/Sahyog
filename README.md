@@ -1,5 +1,5 @@
 
-# Database Management System
+# Sahyog, a Database Management System
 
 A database management system (DBMS) is a software application designed to manage and organize data in a systematic way. It serves as the interface between users and databases, facilitating tasks like:
 
